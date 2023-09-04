@@ -39,6 +39,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+
 		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -67,7 +68,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+
 				<configuration>
+					<excludeDevtools>false</excludeDevtools>
+
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
